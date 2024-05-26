@@ -11,20 +11,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    row-gap: 200px;
 }
 
 .container {
-    width: 500px;
-    height: 60px;
+    width: 650px;
+    height: 150px;
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    /* padding: 80px; */
     border-radius: 15px;
     background-color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 30px;
+    column-gap: 30px;
+
+}
+
+h1 {
+    font-family: fantasy;
+    color: white;
+    letter-spacing: 5px;
+    font-style: italic;
+    animation-name: a;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes a {
+    to {
+        transform: scale(0.8);
+    }
+
+    from {
+        transform: scale(2);
+    }
+
+
+
 }
 
 .meassage {
